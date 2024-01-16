@@ -1,0 +1,93 @@
+{
+  // These tasks will run in order when initializing your CodeSandbox project.
+  "setupTasks": [
+    {
+      "name": "Install Dependencies",
+      "command": "pnpm install"
+    }
+  ],
+
+  // These tasks can be run from CodeSandbox. Running one will open a log in the app.
+  "tasks": {
+    "clean": {
+      "name": "clean",
+      "command": "pnpm clean",
+      "runAtStart": false
+    },
+    "preinstall": {
+      "name": "preinstall",
+      "command": "pnpm preinstall",
+      "runAtStart": false
+    },
+    "test": {
+      "name": "test",
+      "command": "pnpm test",
+      "runAtStart": false
+    },
+    "test:pr": {
+      "name": "test:pr",
+      "command": "pnpm test:pr",
+      "runAtStart": false
+    },
+    "test:ci": {
+      "name": "test:ci",
+      "command": "pnpm test:ci",
+      "runAtStart": false
+    },
+    "test:format": {
+      "name": "test:format",
+      "command": "pnpm test:format",
+      "runAtStart": false
+    },
+    "test:lib": {
+      "name": "test:lib",
+      "command": "pnpm test:lib",
+      "runAtStart": false
+    },
+    "test:lib:dev": {
+      "name": "test:lib:dev",
+      "command": "pnpm test:lib:dev",
+      "runAtStart": false
+    },
+    "test:types": {
+      "name": "test:types",
+      "command": "pnpm test:types",
+      "runAtStart": false
+    },
+    "build": {
+      "name": "build",
+      "command": "pnpm build",
+      "runAtStart": false
+    },
+    "build:all": {
+      "name": "build:all",
+      "command": "pnpm build:all",
+      "runAtStart": false
+    },
+    "watch": {
+      "name": "watch",
+      "command": "pnpm watch",
+      "runAtStart": false
+    },
+    "dev": {
+      "name": "dev",
+      "command": "pnpm dev",
+      "runAtStart": true
+    },
+    "prettier": {
+      "name": "prettier",
+      "command": "pnpm prettier",
+      "runAtStart": false
+    },
+    "prettier:write": {
+      "name": "prettier:write",
+      "command": "pnpm prettier:write",
+      "runAtStart": false
+    },
+    "cipublish": {
+      "name": "cipublish",
+      "command": "pnpm cipublish",
+      "runAtStart": false
+    }
+  }
+}
